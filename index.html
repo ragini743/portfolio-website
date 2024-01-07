@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
+    <title>portfolio-website</title>
+  </head>
+  <body class="overflow-y-scroll">
+    <header class="fixed bg-white w-[100%] z-[5000] top-0 shadow-lg" id="nav">
+      <div class="flex items-center justify-between px-4 md:px-10">
+        <div class="text-black flex items-center transition-colors">
+          <div
+            class="w-10 h-10 rounded-full border-black border-2 overflow-hidden mr-2 md:w-14 md:h-14 md:mr-6"
+          >
+            <img src="./image.webp" class="w-full h-full object-contain" />
+          </div>
+          <span class="md:text-lg"> Raginee Vishwakarma </span>
+        </div>
+
+        <div class="w-10 py-5 sm:hidden" id="expand">
+          <img
+            src="https://i.pinimg.com/originals/b5/4d/f1/b54df198d21ac86bedead6c4a364ef32.png"
+          />
+        </div>
+        <div class="py-6 hidden sm:block w-[50%]">
+          <nav>
+            <ul class="list-none flex justify-evenly">
+              <li>
+                <a
+                  href="#home"
+                  class="font-bold hover:text-indigo-700 transition ease-linear duration-100 delay-100"
+                >
+                  HOME
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="font-bold hover:text-indigo-700 transition ease-linear duration-100 delay-150"
+                >
+                  ABOUT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="font-bold hover:text-indigo-700 transition ease-linear duration-100 delay-150"
+                >
+                  PROJECTS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="font-bold hover:text-indigo-700 transition ease-linear duration-100 delay-150"
+                >
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="mobile-nav hidden bg-neutral-50">
+        <div class="bg-transparent pr-10">
+          <nav class="flex flex-col items-end">
+            <ul class="list-none nav-ul-link">
+              <li>
+                <a
+                  href="#home"
+                  class="hover:text-indigo-700 transition ease-linear duration-100 delay-100"
+                >
+                  HOME
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-indigo-700 transition ease-linear duration-100 delay-150"
+                >
+                  ABOUT
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#projects"
+                  class="hover:text-indigo-700 transition ease-linear duration-100 delay-150"
+                >
+                  PROJECTS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="hover:text-indigo-700 transition ease-linear duration-100 delay-150"
+                >
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section
+      id="home"
+      class="bg-gradient-to-tr from-blue-100 via-fuchsia-100 to-red-100 relative height-[100vh] text-gray-700 top-0 right-0 left-0 bottom-0 pt-[600px] md:pt-[750px]"
+    >
+      <div
+        class="mx-auto left-0 right-0 absolute top-[30%] w-[92%] md:top-[40%]"
+      >
+        <div class="relative">
+          <h1
+            class="font-extrabold text-[2rem] text-center break-words md:text-[3rem] md:tracking-wider"
+          >
+            HEY , I'M RAGINEE VISHWAKARMA
+          </h1>
+        </div>
+        <div
+          class="mt-7 relative text-center leading-normal text-[1.2rem] tracking-wide md:w-[80%] mx-auto md:leading-9"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          maxime ipsa repellendus culpa unde beatae id. Laborum aperiam magnam
+          optio deleniti nobis eos aut,
+        </div>
+        <div class="w-full flex justify-center relative pt-10 pb-10 mb-10">
+          <a href="./#projects" class="delay-1000 transition-transform">
+            <button
+              type="button"
+              class="bg-indigo-800 text-white text-center py-2 px-4 rounded-lg font-bold md:px-8 md:py-4"
+            >
+              PROJECTS
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="relative bg-gradient-to-bl bg-indigo-50 pt-24" id="about">
+      <div class="w-[90%] mx-auto">
+        <div class="md:py-16">
+          <h2
+            class="font-bold text-center text-[2rem] pb-10 md:tracking-widest md:text-[2.5rem] underline"
+          >
+            ABOUT ME
+          </h2>
+          <p class="text-center md:text-[1.4rem] md:tracking-wider">
+            here you will find more information about me , what I do , and my
+            current skill .
+          </p>
+        </div>
+        <div
+          class="w-[80%] lg:w-[100%] pt-6 lg:flex lg:justify-between mx-auto"
+        >
+          <div class="lg:mr-20">
+            <div class="tracking-normal md:leading-9">
+              <h3 class="text-left font-bold text-[1.5rem] mb-7 md:text-[2rem]">
+                Get to know me !
+              </h3>
+              <p class="md:text-[1.3rem]">
+                I'm
+                <b>Frontend Web Devloper </b>
+                building the Frontend of websites and Web Applications .
+              </p>
+              <p class="md:text-[1.3rem]">
+                Check out some of my project in my <b>Projects </b>section .
+              </p>
+              <p class="md:text-[1.3rem]">
+                I also like to sharing ht econtent related to the project that I
+                have learned .
+              </p>
+            </div>
+
+            <div
+              class="w-full flex justify-center mt-10 pb-10 md:pb-20 lg:justify-start"
+            >
+              <a href="#contact">
+                <button
+                  type="button"
+                  class="bg-indigo-800 text-white text-center py-2 px-4 rounded-lg font-bold md:px-8 md:py-4"
+                >
+                  CONTACT
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-left font-bold text-[1.5rem] mb-7 md:text-[2rem]">
+              My Skills
+            </h3>
+            <div class="flex flex-wrap w-[100%] pb-20">
+              <div
+                class="bg-gray-300 px-2 py-1 mr-4 mb-4 md:px-4 md:py-2 rounded-md"
+              >
+                HTML
+              </div>
+              <div
+                class="bg-gray-300 px-2 py-1 mr-4 mb-4 md:px-4 md:py-2 rounded-md"
+              >
+                CSS
+              </div>
+              <div
+                class="bg-gray-300 px-2 py-1 mr-4 mb-4 md:px-4 md:py-2 rounded-md"
+              >
+                Javascript
+              </div>
+              <div
+                class="bg-gray-300 px-2 py-1 mr-4 mb-4 md:px-4 md:py-2 rounded-md"
+              >
+                React
+              </div>
+              <div
+                class="bg-gray-300 px-2 py-1 mr-4 mb-4 md:px-4 md:py-2 rounded-md"
+              >
+                Responsive design
+              </div>
+              <div
+                class="bg-gray-300 px-2 py-1 mr-4 mb-4 md:px-4 md:py-2 rounded-md"
+              >
+                Tailwind CSS
+              </div>
+              <div
+                class="bg-gray-300 px-2 py-1 mr-4 mb-4 md:px-4 md:py-2 rounded-md"
+              >
+                Git and Github
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="pt-10">
+      <div class="mt-20 w-[90%] mx-auto">
+        <h2
+          class="font-bold text-center text-[2rem] pb-10 md:tracking-widest md:text-[2.5rem] underline"
+        >
+          PROJECTS
+        </h2>
+        <p class="text-center md:text-[1.2rem] md:tracking-wider">
+          here you will find some of my projects ....
+        </p>
+      </div>
+      <div class="w-[90%] mx-auto pt-10 md:[80%] lg:w-[70%]">
+         <div class="pb-20 md:flex md:justify-between  md:mx-auto ">
+           <div class=" border-gray-100 shadow-lg border-2 md:w-[45%]">
+            <img src="./project-image.png " />
+           </div>
+           <div class="pt-10 md:w-[45%]">
+            <p class="pb-4">Developed youtube app using youtube-API in react.<br>
+                implemented YouTube features like the homepage
+                recommended videos, search & explore, playlists display etc.
+            </p>
+            <div class="flex justify-center">
+            <button class=" bg-indigo-500 text-white px-10 py-1 rounded-md font-bold"><a href="https://github.com/ragini743/youtube" class=""></a>Link</button>
+        </div>
+           </div>
+          
+         </div>
+         <div class="pb-20">
+            <div class="w-[100%] border-gray-100 shadow-lg border-2">
+             <img src="./project2-image.png " />
+            </div>
+            <div class="pt-10">
+             <p class="pb-4">Developed movie web app with features listings, searching and details.
+
+             </p>
+             <div class="flex justify-center">
+                <button  class=" bg-indigo-500 text-white px-10 py-1 rounded-md font-bold"><a href="https://github.com/ragini743/react-project/tree/main/project-1"></a>Link</button>
+             </div>
+           
+            </div>
+           
+         </div>
+         <div class="pb-20"> 
+            <div class="w-[100%] border-gray-100 shadow-lg border-2">
+             <img src="./project-image.png " />
+            </div>
+            <div class="pt-10">
+             <p class="pb-4">Developed youtube app using youtube-API in react.<br>
+                 implemented YouTube features like the homepage
+              recommended videos, search & explore, playlists display etc.
+             </p>
+             <div class="flex justify-center">
+                <button  class=" bg-indigo-500 text-white px-10 py-1 rounded-md font-bold"><a href="https://github.com/ragini743/react/tree/master/assignment-12"></a>Link</button>
+             </div>
+             
+            </div>
+           
+         </div>
+      </div>
+    </section>
+    <section class="bg-gray-100 pt-16" id="contact">
+      <div class="mt-10 w-[90%] md:w-[60%] lg:w-[50%] mx-auto">
+        <h2
+          class="font-bold text-center text-[2rem] pb-10 md:tracking-widest md:text-[2.5rem] underline"
+        >
+          CONTACT
+        </h2>
+
+        <p class="mb-10 text-center md:text-[1.2rem] md:tracking-wider">
+          Contact me by submitting the form below and I will get back to you as
+          soon as possible.
+        </p>
+        <form class="bg-white p-5 md:p-10" action="./submit.html">
+          <label for="name" class="flex flex-col py-4">
+            Name
+            <input
+              type="text"
+              placeholder="enter your name "
+              class="bg-gray-50 border-gray-200 outline-none py-2 pl-2 rounded-md shadow-md"
+            />
+          </label>
+          <label for="email" class="flex flex-col py-4"
+            >Email
+            <input
+              type="email"
+              id="email"
+              placeholder="enter your email"
+              class="bg-gray-50 border-gray-200 outline-none py-2 pl-2 rounded-md shadow-md"
+          /></label>
+          <label for="message " class="flex flex-col py-4"
+            >Message
+            <textarea
+              rows="6"
+              cols="50"
+              placeholder="enter your message "
+              class="text-wrap break-words bg-gray-50 outline-none pl-4 pt-2 rounded-md shadow-md"
+            ></textarea>
+          </label>
+          <div
+            class="md:flex md:justify-center my-10 rounded-lg md:w-[50%] md:mx-auto"
+          >
+            <button
+              type="submit"
+              class="w-[100%] bg-indigo-800 text-white text-center py-2 px-4 rounded-lg font-bold md:px-8 md:py-4 submit-btn"
+            >
+              SUBMIT
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-black">
+      <div class="text-white py-10 w-[80%] mx-auto">
+        <div class="md:flex md:justify-between">
+          <div class="">
+            <h2 class="pt-6 font-bold pb-2 md:pt-0 text-[1.4rem]">SOCIAL</h2>
+            <div class="flex pb-5">
+              <div class="w-[5%] mr-6">
+                <a
+                  href="https://www.linkedin.com/in/ragini-vishwakarma-29631b24b/"
+                >
+                  <img
+                    src="https://www.freeiconspng.com/thumbs/linkedin-logo-png/displaying-19-gallery-images-for-linkedin-logo-png-25.png"
+                    class=""
+                  />
+                </a>
+              </div>
+              <div class="w-[5%]">
+                <a href="https://github.com/ragini743">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoEXe6At-Z-yhRELzempzeuXY9BZuD5a6AVnoeEmjtKg&s"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <h3 class="text-[1.4rem]">Raginee Vishwakarma</h3>
+            <p class="pb-8">A frontend web devloper</p>
+          </div>
+        </div>
+        <hr class="" />
+        <p class="text-center pt-4 text-sm">&copy Copyright 2024.</p>
+      </div>
+    </footer>
+  </body>
+</html>
