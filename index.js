@@ -33,7 +33,19 @@ ulNavMobile.addEventListener('click', () => {
     text2: "  implemented YouTube features like the homepage recommended videos,search & explore, playlists display etc.",
   url:"https://github.com/ragini743/react/tree/master/assignment-12",
   },
-  
+  {
+    src  :"./project4.png" ,
+    text1 :" Developed weather app using weather api. " ,
+    text2 : " implemented weather app features  where it has default location . you can search the weather report at different places" ,
+    url :"https://weather-app743.netlify.app/" ,
+  } ,
+  {
+    src :"./project5.png",
+    text1:" created a figma design using react" ,
+    text2: "",
+    url :"https://figma11-design.netlify.app/" ,
+  }
+
 
 ]
 
@@ -41,7 +53,7 @@ ulNavMobile.addEventListener('click', () => {
 const addProject = document.getElementById("add-project")
 console.log(addProject)
 data.forEach((project)=>{
-  console.log(project)
+  
   const projectDiv = document.createElement("div")
   projectDiv.innerHTML = `<div class="pb-20 md:flex md:justify-between md:py-10 md:mx-auto border-gray border-2 mb-10"
 >
