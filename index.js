@@ -44,6 +44,12 @@ ulNavMobile.addEventListener('click', () => {
     text1:" created a figma design using react" ,
     text2: "",
     url :"https://figma11-design.netlify.app/" ,
+  } ,
+  {
+    src :"./project6.png",
+    text1:" created a movie app .usinng tvmaje api" ,
+    text2: " Implement a feature similar to a movie app where users can explore movies, find information about them, and book movie tickets.",
+    url :"https://tvmaje-movie-app.netlify.app/" ,
   }
 
 
